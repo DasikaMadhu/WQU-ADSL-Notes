@@ -490,3 +490,20 @@ type(name)      # bool
 - Functions allow you to write code efficiently
 - When you need to act more than once, wrap that code in a function and call it when you need it
 - When you need to change how the action is carried out, you can change the code in the function, and the improvement is applied everywhere
+
+## Saving State
+
+#### What is a program’s state?
+- The state of a program is the set of values of all the variables at a given moment
+- Saving state refers to saving these values so they can be recovered if the program crashes or the user closes it
+
+#### What is the JSON format? Why is JSON used to save a state?
+- A common way to save a program’s state is to write the current values to a JSON file
+- JSON (JavaScript Object Notation) is a way of storing data that’s easy for programs to read back
+- Originally developed for use in JavaScript programs, JSON is now used by many programming languages
+- The JSON format can be read by programs and by humans
+- Some simple JSON data files look just like Python code
+- Python has libraries you can use to simplify reading and writing JSON files
+
+
+
