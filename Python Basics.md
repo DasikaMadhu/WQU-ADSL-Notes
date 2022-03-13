@@ -64,13 +64,13 @@
          - Using the **type()** with the string variable name as a parameter returns the type 'str'
            ```
            var = 'This is a string'
-           type(var)                  # 16 
+           type(var)                  # str 
            ```
      - **How to check the length of a string?**
          - Using the **len()** with the string variable name as a parameter returns the length of the string
            ```
            var = 'This is a string'
-           len(var)                  # str  
+           len(var)                   # 16  
            ```
      - **How to index and slice a string?**
          -  Indexing a string allows accessing individual characters in a string directly by using a numeric value
