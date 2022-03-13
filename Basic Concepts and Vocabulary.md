@@ -186,6 +186,23 @@ print("Hello, World!")
 - When you need to improve that code, you only need to change the code in the function for it to work throughout the program
 - Refactoring can help you find more efficient ways to solve problems, and separating code into different modules makes it easier to work with
 
+## Modules
+
+#### What is a module?
+- In python, a module is a file that contains code
+- Modules are used to break up large programs into smaller parts for more manageable coding
+
+#### Why are modules important?
+- Modules compartmentalize complex programs
+- Programmers break up larger projects into different files, each of which focuses on one aspect of the project
+- his makes large projects easier to write and collaborate on in teams: each programmer can focus on only the modules they’re responsible for
+
+#### How do you use a module in a program?
+- To create a module, you move code that has a particular aim into a separate file
+- To use a module, import it into the file you’re working on to make the code available
+- You can import the entire module or just the parts you need
+
+
 ## Standard Library
 
 #### What is a standard library?
