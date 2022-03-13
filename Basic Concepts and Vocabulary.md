@@ -424,7 +424,7 @@ print("sum = 100")     # will print sum = 100 only if the assert statement in te
 - A variable is a name attached to a piece of data
 - Simply put, it is a container to store data
 - First define a variable, then use that name when you refer to that piece of data
-- They reserve some space in memory to store data
+- They reserve some space in memory to store data and can hold a small piece of information, or it can hold many gigabytes of data
 ```
 # int data type 
 age = 24  
@@ -442,6 +442,18 @@ print(a)      # 24
 a, b = 12, 24
 print(a, b)   # 12 24
 ``` 
+
+#### What are the rules for naming a variable?
+- Variable names in python follow two main rules:
+     - They must contain only letters, underscores, and numbers
+     - They must start with a letter or underscore
+- Good variable names are short but descriptive:
+```
+First_name = ‘albert’
+Last_name = ‘einstein’
+Username = ‘einsteina’
+Age = 42
+```
 
 #### Why are variables important?
 - Variables are crucial because they help to measure concepts in a study
