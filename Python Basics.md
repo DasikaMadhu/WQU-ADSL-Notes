@@ -13,7 +13,7 @@
 **1. Text Data Types**
    - ### str
      - **What is a string?**
-         - Strings are a ordered sequence of characters that are enclosed within 'single' or "double" quotes 
+         - Strings are an ordered sequence of characters that are enclosed within 'single' or "double" quotes 
          - There is no limit on the length of a string
      - **How do you store a string in a variable?**
          - In this example, “I love Python!” is a string assigned to the variable message:
@@ -25,7 +25,21 @@
             print(my_string)
             
             print("Okay, see you again.")    # prints Okay, see you again.
-
+	    
+	       # multi-line string
+	       print("""This is line one.
+	                 This in line two!
+                     Is this line three?
+		     """)                         # prints This is line one.
+	                                              This in line two!
+                                                  Is this line three?
+					      
+		   print('''This is line one.
+		             This in line two!
+			         Is this line three?
+			     ''')                    # prints This is line one.
+	                                              This in line two!
+                                                  Is this line three?
             ```
          - Strings support being encased by single and double quotes, so you can use nested quotes to print strings with quotes
            ```
@@ -42,7 +56,7 @@
 	        #          eggs
            ```
      - **What is a string method?**
-         - A string method is a function that performs an action on a string
+         - A string method is a function that acts on a string
          - They are useful for presenting data in a certain format or cleaning up user-submitted data
      - **How do you change the case of a string?**
          - To change the case of a string, use the methods **title()**, **upper()**, and **lower()**
@@ -104,23 +118,117 @@
 	       my_string[2::2]                      # 'i sasrn'
 	       ```
       -  **How to replace strings with other strings?**
-         - Using the **replace()** method helps you reeplace a string with another string
+         - Using the **replace()** method helps you replace a string with another string
             ```
             my_string = "Hello, World!"
 	       my_string.replace("H", "J")          # 'Jello, World!'
             ```    
       -  **How to split strings?**
          - Using the **split()** method splits the string into substrings
+         - Assign the split parts to other strings
             ```
             my_string = "Hello, World!"
-	       my_string.split(","))                # ['Hello', ' World!']
+	       my_string.split(","))                                    # ['Hello', ' World!']
+	       
+	       my_string = "Hi, these are my Python notes!"
+	       first_string, second_string = my_string.split(", ")
+	       first_string                                             # Hi
+	       second_string                                            # these are my Python notes!
             ```    	   
-      -  **How to split strings?**
-         - Using the **split()** method splits the string into substrings
+      -  **How to count the occurrence of specific characters in a strings?**
+         - Using the **count()** method returns the first occurrence of the specified value
             ```
-            my_string = "Hello, World!"
-	       my_string.split(","))                # ['Hello', ' World!']
-            ```    	    
+	       # string count syntax - string.count(value, start, end)
+	       my_string = "Hi, these are my Python notes!"
+	       my_string.count("Python")
+	       my_string.count("n")
+	       my_string.count("n",0,10)
+            ```    	
+      -  **What is the difference between index() and find()?**
+         - The **index()** and **find()** methods both return the first occurrence of the specified value
+         - However, the find() method returns -1 if the value is not found
+         - The index() method  raises an exception if the value is not found
+            ```
+	       # string index syntax - string.index(value, start, end)
+            my_string = "Hi, these are my Python notes!"
+	       my_string.index("a")                # 10
+	       my_string.index("!")                # 2
+	       my_string.index("!")                # 29
+	       my_string.index("x")                # ValueError: substring not found
+	       my_string.find("x")                 # -1
+            ```
+      -  **How to partition a string?**
+         - Using the **partition()** method searches for a specified string, and splits the string into a tuple containing three elements
+            ```
+	       # string index syntax - string.index(value, start, end) 
+	       my_string = "Hi, these are my Python notes!"
+	       my_string.partition("Python")            # ('Hi, these are my ', 'Python', ' notes!')
+	       my_string.partition("n")                 # ('Hi, these are my Pytho', 'n', ' notes!')
+	       my_string.partition("notes")             # ('Hi, these are my Python ', 'notes', '!')
+            ```
+      -  **What is string concatenation?**
+         - String concatenation appends two strings together
+         - It binds a number of string variables together, creating one string from two or more individual strings
+            ```
+	       string_one = "Hello, "
+	       string_two = "world!"
+	       my_string =  string_one + string_two           # Hello, world!
+	       
+	       string_one = "Okay,"
+	       string_two = "bye!"
+	       my_string =  string_one + " " + string_two     # Okay, bye!
+            ```
+      -  **What is string interpolation?**
+         - Inject a variable into your string for printing
+         - Substitute values of variables into placeholders in a string
+         - String interpolation can be done in three ways
+         	+ using placeholders % 
+         	        - A placeholder can interpolate different types of data into a string literal
+         	        - Placeholders can be aby one of the following -
+         			* %d or %i - integer
+         			* %f - float
+         			* %e - exponential
+         			* %s - string
+         			* %c - single character
+         			* %g - rounded off version of %f and %e
+         			* %r - raw data
+         			* %o - octal
+         			* %x - hexadecimal
+         	+ .format()
+           		- A placeholder {} is used to interpolate data into a string literal based on their index position
+         	+ f-strings 
+         	 	- They are formatted string literals provide the option to format strings with minimal code
+         	 	- Require Python 3.6 or higher
+         	 	- They are faster than the above two options
+            ```
+	       # regular string interpolation
+	       string_name = "John"
+	       print("Hello, " + string_name)                                # Hello John
+	       
+	       # using placeholders - print("String literal %format-specifier-placeholder" % "variable list")
+	       print("Hello, %s" % "Jane")                                   # Hello Jane 
+	       print("Hello %s, you are at %s" % ("Jane", "work"))           # Hello Jane, you are at work
+	       print("Hello %s, you are %d years old" % ("Jane",24))         # Hello Jane, you are 24 years old
+	       
+	       # using .format()
+	       print('String format - {}'.format('one'))                                           # String format - one
+	       print('String format - {} {} {}'.format('part 1','part 2','part 3'))                # String format - part 1 part 2 part 3
+	       print('the {} {} {}'.format('fox','quick','brown'))                                 # the fox quick brown
+	       print('the {1} {2} {0}'.format('fox','quick','brown'))                              # the quick brown fox
+	       print('the {1} {1} {1}'.format('fox','quick','brown'))                              # the quick quick quick
+	       print('the {q} {b} {f}'.format(f='fox',q='quick',b='brown'))                        # the quick brown fox
+	       print("result = {r}".format(r=result))                                              # result = 0.1287001287001287
+	       print("result = {r:1.3f}".format(r=result))                                         # result = 0.129
+	       print("result = {r:10.3f}".format(r=result))                                        # result =      0.129
+	       print("Hello, my name is {n}. My age is {a}.".format(n="Jane",a=52))                # Hello, my name is Jane. My age is 52.	
+	       
+	       # using f-strings
+	       name_one="Dave"
+	       name_two="Alex"
+	       print("These are my brothers %s and %s" %(name_one,name_two))                       # These are my brothers Dave and Alex
+	       print(f"{name_one!r} is a python developer")                                        # 'Dave' is a python developer
+            ```
+	    
 **2. Numeric Data Types**
    - int
    - float
