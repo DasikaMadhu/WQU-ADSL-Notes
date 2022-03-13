@@ -14,6 +14,7 @@ A curated list of notes compiled while working on the World Quant University - A
     - [Syntax](https://github.com/DasikaMadhu/WQU-ADSL-Notes/blob/main/Basic%20Concepts%20and%20Vocabulary.md#syntax)
     - [Debugging](https://github.com/DasikaMadhu/WQU-ADSL-Notes/blob/main/Basic%20Concepts%20and%20Vocabulary.md#debugging)
     - [Refactoring](https://github.com/DasikaMadhu/WQU-ADSL-Notes/blob/main/Basic%20Concepts%20and%20Vocabulary.md#refactoring)
+    - [Modules](https://github.com/DasikaMadhu/WQU-ADSL-Notes/blob/main/Basic%20Concepts%20and%20Vocabulary.md#modules)
     - [Standard Library](https://github.com/DasikaMadhu/WQU-ADSL-Notes/blob/main/Basic%20Concepts%20and%20Vocabulary.md#standard-library)
     - [Third-party Libraries](https://github.com/DasikaMadhu/WQU-ADSL-Notes/blob/main/Basic%20Concepts%20and%20Vocabulary.md#thrid-party-libraries)
     - [Frameworks](https://github.com/DasikaMadhu/WQU-ADSL-Notes/blob/main/Basic%20Concepts%20and%20Vocabulary.md#frameworks)
