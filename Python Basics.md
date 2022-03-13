@@ -33,7 +33,7 @@
            print(python_quote)              # prints I said, “I love Python!”
            ```
      - **How do you include tabs and newlines in a string?**
-         - Insert tabs and newlines into strings using the special sequences \t and \
+         - Insert tabs and newlines into strings using the special sequences \t and \n
            ```
            message = “Grocery list:\n\tmilk\n\teggs”
            print(message)
@@ -75,7 +75,7 @@
      - **How to index and slice a string?**
          -  Indexing a string allows accessing individual characters in a string directly by using a numeric value
          -  String indexing is zero-based: the first character in the string has index 0, the next is 1, and so on
-         -  Strings supoort negative indexing
+         -  Python supports negative indexing
             ```
             my_string = 'new string'
             my_string[0]                  # 'n'
@@ -84,7 +84,43 @@
             my_string[-1]                 # 'g'
             my_string[-4]                 # 'r'
             ```
-         -  
+        -  String slicing is the process of extracting substrings from the main string
+        -  Python supports negative slicing
+           ```
+	       # string slicing syntax - string_name[start : stop : step]
+	       
+	       my_string = 'This is a string'
+	       my_string[:2]                        # 'Th'
+	       my_string[:6]                        # 'This i'
+	       my_string[2:]                        # 'is is a string'
+	       my_string[4:len(s)]                  # ' is a string'
+	       my_string[:2] + s[2:]                # 'This is a string'
+	       my_string[:]                         # 'This is a string'
+	       my_string[-8:-1]                     # 'a strin'
+	       my_string[:-1]                       # 'This is a strin'
+	       my_string[::-1]                      # 'gnirts a si sihT'
+	       my_string[::-5]                      # 'gsiT'
+	       my_string[:3:-2]                     # 'git  i'
+	       my_string[2::2]                      # 'i sasrn'
+	       ```
+      -  **How to replace strings with other strings?**
+         - Using the **replace()** method helps you reeplace a string with another string
+            ```
+            my_string = "Hello, World!"
+	       my_string.replace("H", "J")          # 'Jello, World!'
+            ```    
+      -  **How to split strings?**
+         - Using the **split()** method splits the string into substrings
+            ```
+            my_string = "Hello, World!"
+	       my_string.split(","))                # ['Hello', ' World!']
+            ```    	   
+      -  **How to split strings?**
+         - Using the **split()** method splits the string into substrings
+            ```
+            my_string = "Hello, World!"
+	       my_string.split(","))                # ['Hello', ' World!']
+            ```    	    
 **2. Numeric Data Types**
    - int
    - float
