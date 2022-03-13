@@ -2,7 +2,8 @@
 
 #### What is a programming language?
 - A programming language is a set of rules for giving instructions to a computer
-- It provides the syntax for giving instructions and specifies the ways to store information, and it controls the order in which instructions are executed in a program
+- It provides the syntax for giving instructions and specifies the ways to store information
+- It controls the execution order of a program
 
 #### What is unique about Python?
 - Python is a high-level programming language, which means it takes care of many low-level tasks for you so you can focus on solving problems
@@ -15,7 +16,7 @@
 ## Operating Systems
 
 #### What is an operating system?
-- The operating system(OS) is the software that controls the computer's inner functionality
+- The operating system(OS) is the software that controls the inner functionality of a computer
 
 #### What does an operating system do?
 - An operating system performs low-level functionality, such as reading from and writing to memory and interacts with hardware devices, like hard drives, RAM, CPU, graphics processors, displays, batteries, and other external devices 
@@ -172,16 +173,303 @@ print("Hello, World!")
 - Refactoring is the process of rewriting parts of a working program to make it simpler, more efficient, and easier to work with
 
 #### When and why should you refactor code?
-- Consider refactoring code when you’ve solved the same problem in multiple places
-- This approach follows the don’t repeat yourself, or DRY,  principle
+- Consider refactoring code when you have solved the same problem in multiple places
+- This approach follows the do not repeat yourself (DRY)  principle
 - Code repetition presents opportunities for errors, makes programs harder to modify, and makes programs longer and harder to read
 
 #### What is the DRY principle?
-- The DRY principle is stated as "Every piece of knowledge must have a single, unambiguous, authoritative representation within a system"
+- The DRY principle is stated as - every piece of knowledge must have a single, unambiguous, authoritative representation within a system
 - When the DRY principle is applied successfully, a modification of any single element of a system does not require a change in other logically unrelated elements
 
 #### How do you refactor code?
-- To refactor code, place a repeated block of code into a separate function
-- Then replace the repeated code with a function call
+- To refactor code, place a repeated block of code into a separate function, then replace the repeated code with a function call
 - When you need to improve that code, you only need to change the code in the function for it to work throughout the program
 - Refactoring can help you find more efficient ways to solve problems, and separating code into different modules makes it easier to work with
+
+## Standard Library
+
+#### What is a standard library?
+- A standard library is the set of tools included in any language standard installation
+- It comprises core data structures and tools for working with data in your program
+
+#### What constitutes a standard library?
+- Python standard library encloses the following tools:
+     - Working with a variety of data types and text
+     - Mathematical functions
+     - Work with files and dates and times
+     - Make graphical user interfaces (GUIs)
+     - Work with networks and multimedia
+     - Test and debug your code and handle errors
+     - Distribute your programs
+
+#### What is not a part of a standard library?
+- Seldom does a standard library include specialized data analysis tools, game frameworks, web application frameworks, and other application-specific libraries 
+- These are available through external libraries that are updated more often than the language as a whole
+- Once you understand a languages core syntax and rules become familiar with the language standard library tools, these can help you write code efficiently
+
+## Thrid-party Libraries
+
+#### What is a third-party library?
+- A third-party library provides additional functionality not covered by a language standard library
+
+#### What is a package?
+- To understand Python packages, we will briefly look at scripts and modules 
+    - A script is something you execute in the shell to accomplish a defined task 
+    - To write a script, you would type your code into your favourite text editor and save it with the .py extension 
+    - You can then use the python command in a terminal to execute your script
+- A module is a Python program that you import, either in interactive mode or into your other programs 
+    - It is an umbrella term for reusable code
+    - A Python package usually consists of several modules 
+    - Physically, a package is a folder containing modules and maybe other folders that themselves may have more folders and modules
+    - Conceptually, it is a namespace
+    - Package modules can be referenced by a package name that they are bound by
+
+#### What is a package manager?
+- Package Managers are tools that help you manage the dependencies for your project
+- A dependency is code that is required for your program to function as required that often are in the form of packages
+
+#### What kinds of third-party libraries are available for Python?
+- Third-party libraries, or packages, are installed through an automated package manager, such as pip,  for consistent and secure installation
+- A package manager also helps keep the libraries you have installed up-to-date
+- More than 100,000 packages are available through the Python package manager
+- For example, the requests package helps you write programs to access online resources, Pillow helps to work with images, SQLAlchemy makes it easier to work with databases, and Numpy offers tools for working with numerical data
+
+## Frameworks 
+
+#### What is a framework?
+- A framework is a larger package that helps solve a particular problem
+- Some frameworks help you build games, data visualizations, and web applications
+- A framework includes tools that handle common tasks within a problem area
+- For example, a game framework often provides a way to determine when a collision between two game elements has occurred
+- A web application framework usually provides a way to extract information from a database
+- Simple frameworks leave it to you to make many problem-solving decisions; larger frameworks have more default approaches to common situations
+
+#### What kinds of frameworks are available for Python?
+- Popular python web frameworks include Django, a large framework that provides tools to build web applications, and Flask, a bare-bones web application framework that leaves many decisions up to you
+- Popular game frameworks include Pygame, Kivy, and Piglet
+
+## Error Handling
+
+#### What is error handling?
+- Error handling refers to writing code that anticipates errors that are likely to occur and then responds to those errors
+
+#### Why is error handling important?
+- To run successfully, a program needs the correct set of inputs and the ability to do its work, and it must return its output appropriately
+- Errors can happen during any of these stages
+- Well-written programs have error-handling code that anticipates and deals with errors that might occur at each stage
+- Error handling can just be code that checks certain values and conditions before proceeding
+- If the values and conditions are appropriate, execution continues along one path
+- If not, it follows a different path
+
+#### How do you handle errors in a program?
+- One common approach is to check whether the input is in the correct format
+- When a user inputs their age, you expect a positive number
+- You can add code to check for a positive number before continuing and then raise an exception if anything else is entered
+
+#### What is an exception?
+- An exception is a special error condition that responds to a specific kind of error
+
+## Version Control 
+
+#### What is version control?
+- Version control is the process of saving different versions of your project as it evolves
+- If you break a program, you can return to a previously working version, or you can simply examine how your program worked in a previous version
+
+#### What is a commit?
+- Version control systems work by allowing you to make a commit, which saves the current state of all the files in your project
+- You can make a commit after implementing a new feature
+
+#### What does it mean to “check out” a commit?
+- If you make a mistake and can’t figure out how to fix your program, you can check out the previous commit and start again from a working version of your project
+
+#### What is a repository?
+- A repository is the collection of all commits you’ve made to a project; it contains other resources required to manage your project as well
+
+#### Why is version control important?
+- Version control is important to keep track of changes — and keep every team member working on the right version
+- You should use version control software for all code, files, and assets that multiple team members will collaborate on
+
+#### What is distributed version control?
+- A distributed version control system allows multiple people to make commits on the same project and provides tools for resolving conflicts in collaborative projects
+- Git and Mercurial are the most common version control systems at the time of this writing
+
+## Testing 
+
+#### What is a test?
+- A test is code outside your program that runs some of your program code to check whether it works correctly
+
+#### How do you write a test?
+- Each part of a program solves one aspect of a larger problem your problem aims to solve
+- You can write tests that prove each part of your code behaves properly
+- To write a test, you import the code you want to test, set up sample data, and run the code using that data
+- Then you can make assertions about the results
+
+#### What is an assertion?
+- An assertion is a statement about what a value or condition should be
+- For example, you might assert that the value of the variable age is greater than 18
+- If the code acts as it should, the test passes
+- If it doesn’t, the test fails
+```
+def test_sum():
+    assert sum([10, 20, 70]) == 100, "Should be 100"
+
+test_sum()
+print("sum = 100")     # will print sum = 100 only if the assert statement in test_sum() passes
+```
+
+#### How do tests help you add new features to a project?
+- A good set of tests helps you find bugs before your users do
+- It also helps ensure that when you add new features to your projects, the code doesn’t affect the behaviour of existing features and your program still works
+
+## User Interfaces 
+
+#### What is an application programming interface?
+- An application programming interface (API) is a specification for how one program asks another program for information
+
+#### What is a graphical programming interface?
+- A graphical user interface (GUI) is an easy-to-use interface that lets users click elements on the screen
+
+#### What is a command programming interface?
+- A command-line interface (CLI) allows users to interact with a program by entering commands in a terminal
+
+#### Why is each of these important?
+- Using GUI is the simplest way for non-technical users to interact with a program
+- For example, a weather website would present information in a browser (a GUI) for general users, but it might also provide an API that technical users can work with to build projects that use real-time weather data
+- APIs allow you to pull in data from external resources
+- Developers working on large, collaborative projects can build their APIs to design how each program in the project communicates
+- Designing and building a good API requires experience and planning, but learning to use an API is much simpler
+- A CLI enables automation and scripting in a more customizable fashion than with GUIs
+
+
+## Databases
+
+#### What is a database?
+- A database is a program that allows you to store and retrieve information
+- Good databases are highly optimized to do this efficiently and reliably with large amounts of data
+
+#### Why are databases important?
+- Databases store the application information
+- Retrieving information from a website or posting on a website means that information is being read from or written to a database
+- Many of the programmers working on a project interact with a database
+
+#### What is SQL? How do you communicate with a database?
+- Structured Query Language (SQL) is a language written to interact with databases, but you don’t need to know SQL to work with a database
+- Many languages and frameworks generate SQL for you so you can work with the database through those languages
+- The application server can communicate only through the intermediary of a database driver (SQL)
+- A database driver is software that acts as an interpreter between the application server and the database
+- After the driver establishes communication, the query is executed against the database and a recordset is created
+
+#### What are some common databases?
+- These are the most common databases used in programming
+     - SQLite
+     - PostgreSQL
+     - MySQL
+     - SQL Serve
+     - Oracle 
+
+## Data Structures and Types 
+
+#### What are data structures?
+- Data structures define how you store and organize data efficiently in any programming language
+- Every programming language has a core set of data structures
+- They allow you to access and perform operations on the data
+
+#### What are data types?
+- Data types refer to the data structures you are using or the kind of information stored in those data structures
+- The most common data types include
+     - int
+     - float
+     - complex
+     - str
+
+#### Why are data structures important?
+- Much of programming focuses on handling data
+- How much you represent data through code impacts what you can do with the data - if you model your data well, your program is easier to work with
+- Choosing a specific approach to data modelling portrays how you think about data, so knowing the available data structures in a programming language will help you best represent the information in your project
+
+#### What are the most common kinds of data structures?
+- Data structures offer different ways of storing data based on our requirements
+     - Mutability
+          - It refers to the ability to change an object after its creation
+          - Mutable objects can be modified, added, or deleted after they’ve been created
+          - Immutable objects cannot be modified after their creation
+     - Access requirements
+          - It relates to whether we require the position of an element to access the element
+- The most common data structures include
+     - Lists
+     - Dictionaries 
+     - Sets
+     - Tuples
+
+## Variables 
+
+#### What is a variable?
+- A variable is a name attached to a piece of data
+- Simply put, it is a container to store data
+- First define a variable, then use that name when you refer to that piece of data
+- They reserve some space in memory to store data
+```
+# int data type 
+age = 24  
+
+# float data type 
+distance   = 20.86  
+
+# string data type
+emp_one    = "John Doe"  
+emp_two = 'Jane Doe'
+
+# Python variables support multiple assignments
+a = b = c = 24
+print(a)      # 24
+a, b = 12, 24
+print(a, b)   # 12 24
+``` 
+
+#### Why are variables important?
+- Variables are crucial because they help to measure concepts in a study
+- Used to retrieve data throughout the program without having the remember the value of the data stored
+- Used to perform, store and reuse the outputs of operations
+- They improve code readability 
+
+#### What is a statistically typed language?
+- In statistically typed languages, you must declare the kind of data a variable represents when you define it
+- Status languages prioritize processor efficiency over a programmer's time
+- Programs are longer and more verbose in status languages but can be highly optimized
+- Type-checking is done during compile-time
+
+#### What is a dynamically typed language?
+- In a dynamically typed language, you do not have to declare the kind of data a variable will represent
+- Dynamic languages prioritize a programmer's time over efficient use of the processor, but they can still be fast and efficient when used properly
+- Type-checking is done during run-time
+
+#### What makes Python a dynamic language?
+- In Python, the interpreter examines the data associated with the variable throughout the life of the program and manages type issues for you
+```
+# declaring a string variable
+name = 'Jane'
+type(name)      # str
+
+# reassigning a boolean value to 'name'
+name = True
+## reassigning a value to the 'x'
+type(name)      # bool
+```
+
+## Functions 
+
+#### What is a function? What are the parameters and arguments?
+- A function is a block of code that you can name and that performs a certain task
+- You can run the block many times by using the function that specifies its name and the data the function needs to work
+- Parameters are the variables in the function that hold this data
+- An argument is a value that is passed to a function when it is called
+
+
+#### What is a function call?
+- To use a function, you call it
+- When you call a function, you must provide values, or arguments, for each of the parameters of the function
+
+#### What are functions used for?
+- Functions allow you to write code efficiently
+- When you need to act more than once, wrap that code in a function and call it when you need it
+- When you need to change how the action is carried out, you can change the code in the function, and the improvement is applied everywhere
