@@ -25,10 +25,11 @@ A curated list of notes compiled while working on the World Quant University - A
     - [Databases](https://github.com/DasikaMadhu/WQU-ADSL-Notes/blob/main/Basic%20Concepts%20and%20Vocabulary.md#databases)
     - [Data Structures and Types](https://github.com/DasikaMadhu/WQU-ADSL-Notes/blob/main/Basic%20Concepts%20and%20Vocabulary.md#data-structures-and-types)
     - [Variables](https://github.com/DasikaMadhu/WQU-ADSL-Notes/blob/main/Basic%20Concepts%20and%20Vocabulary.md#variables)
-    - [Functions](https://github.com/DasikaMadhu/WQU-ADSL-Notes/blob/main/Basic%20Concepts%20and%20Vocabulary.md#functions)
-3. [Python Basics](https://github.com/DasikaMadhu/WQU-ADSL-Notes/blob/main/Python%20Basics.md)
-4. [Python Object-oriented Programming](https://github.com/DasikaMadhu/WQU-ADSL-Notes/blob/main/Object-oriented%20Programming.md)
-5. [Tabular and Tidy Data](https://github.com/DasikaMadhu/WQU-ADSL-Notes/blob/main/Tabular%20and%20Tidy%20Data.md)
+    - [Saving State](https://github.com/DasikaMadhu/WQU-ADSL-Notes/blob/main/Basic%20Concepts%20and%20Vocabulary.md#saving-state)
+2. [Python Basics](https://github.com/DasikaMadhu/WQU-ADSL-Notes/blob/main/Python%20Basics.md)
+3. [Python Object-oriented Programming](https://github.com/DasikaMadhu/WQU-ADSL-Notes/blob/main/Object-oriented%20Programming.md)
+    - [Functions](https://github.com/DasikaMadhu/WQU-ADSL-Notes/blob/main/Object-oriented%20Programming.md#functions)
+4. [Tabular and Tidy Data](https://github.com/DasikaMadhu/WQU-ADSL-Notes/blob/main/Tabular%20and%20Tidy%20Data.md)
 
 ## Collaborators
 1. [Dasika Madhu](https://github.com/DasikaMadhu)
