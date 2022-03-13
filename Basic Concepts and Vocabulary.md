@@ -498,4 +498,3 @@ type(name)      # bool
 - The JSON format can be read by programs and by humans
 - Some simple JSON data files look just like Python code
 - Python has libraries you can use to simplify reading and writing JSON files
-
