@@ -185,15 +185,17 @@
          	+ using placeholders % 
          	        - A placeholder can interpolate different types of data into a string literal
          	        - Placeholders can be aby one of the following -
-         			* %d or %i - integer
-         			* %f - float
-         			* %e - exponential
-         			* %s - string
-         			* %c - single character
-         			* %g - rounded off version of %f and %e
-         			* %r - raw data
-         			* %o - octal
-         			* %x - hexadecimal
+				| Placeholder | Data Type                        |
+				|-------------|----------------------------------|
+				| %d or %i    | integer                          |
+				| %f          | float                            |
+				| %e          | exponential                      |
+				| %s          | string                           |
+				| %c          | single character                 |
+				| %g          | rounded off version of %f and %e |
+				| %r          | raw data                         |
+				| %o          | octal                            |
+				| %x          | hexadecimal                      |        	       
          	+ .format()
            		- A placeholder {} is used to interpolate data into a string literal based on their index position
          	+ f-strings 
@@ -245,3 +247,5 @@
 
 ## Conditional Statements
    
+   
+ 			
