@@ -11,10 +11,13 @@
 | Boolean       | bool          |
 
 **1. Text Data Types**
+
    - ### str
+
      - **What is a string?**
          - Strings are an ordered sequence of characters that are enclosed within 'single' or "double" quotes 
          - There is no limit on the length of a string
+         
      - **How do you store a string in a variable?**
          - In this example, “I love Python!” is a string assigned to the variable message:
             ```
@@ -46,6 +49,7 @@
            python_quote = ‘ I said, “I love Python!” ’
            print(python_quote)              # prints I said, “I love Python!”
            ```
+	   
      - **How do you include tabs and newlines in a string?**
          - Insert tabs and newlines into strings using the special sequences \t and \n
          - These are called escape characters
@@ -68,9 +72,11 @@
 	        #          milk
 	        #          eggs
            ```
+	   
      - **What is a string method?**
          - A string method is a function that acts on a string
          - They are useful for presenting data in a certain format or cleaning up user-submitted data
+         
      - **How do you change the case of a string?**
          - To change the case of a string, use the methods **title()**, **upper()**, and **lower()**
            ```
@@ -79,6 +85,7 @@
            name.upper()              # ‘ELLA FITZGERALD’
            name.lower()              # ‘ella fitzgerald’
            ```
+	   
      - **How do you strip whitespace from a string?**
          - The **lstrip()**, **rstrip()**, and **strip()** methods remove extra whitespace from strings, helpful for cleaning up date:
             ```
@@ -87,18 +94,21 @@
            name.rstrip()              # ‘   jordan’
            name.strip()               # ‘jordan’
            ```
+	   
      - **How to check if a variable is of type string?**
          - Using the **type()** with the string variable name as a parameter returns the type 'str'
            ```
            var = 'This is a string'
            type(var)                  # str 
            ```
+	   
      - **How to check the length of a string?**
          - Using the **len()** with the string variable name as a parameter returns the length of the string
            ```
            var = 'This is a string'
            len(var)                   # 16  
            ```
+	   
      - **How to index and slice a string?**
          -  Indexing a string allows accessing individual characters in a string directly by using a numeric value
          -  String indexing is zero-based: the first character in the string has index 0, the next is 1, and so on
@@ -130,12 +140,14 @@
 	       my_string[:3:-2]                     # 'git  i'
 	       my_string[2::2]                      # 'i sasrn'
 	       ```
+	       
       -  **How to replace strings with other strings?**
          - Using the **replace()** method helps you replace a string with another string
             ```
             my_string = "Hello, World!"
 	       my_string.replace("H", "J")          # 'Jello, World!'
             ```    
+	    
       -  **How to split strings?**
          - Using the **split()** method splits the string into substrings
          - You can assign the split parts to other strings
@@ -153,6 +165,7 @@
 	            my_string = "Thank you for perusing my notes. Feel free to check out the rest."
                 print(my_string.splitlines())                          # ['Thank you for perusing my notes. Feel free to check out the rest.']
 	       ```
+	       
       -  **How to count the occurrence of specific characters in a string?**
          - Using the **count()** method returns the first occurrence of the specified value
             ```
@@ -162,6 +175,7 @@
 	       my_string.count("n")
 	       my_string.count("n",0,10)
             ```    	
+	    
       -  **What is the difference between index() and find()?**
          - The **index()** and **find()** methods both return the first occurrence of the specified value
          - However, the find() method returns -1 if the value is not found
@@ -175,6 +189,7 @@
 	       my_string.index("x")                # ValueError: substring not found
 	       my_string.find("x")                 # -1
             ```
+	    
       -  **How to partition a string?**
          - Using the **partition()** method searches for a specified string, and splits the string into a tuple containing three elements
             ```
@@ -184,6 +199,7 @@
 	       my_string.partition("n")                 # ('Hi, these are my Pytho', 'n', ' notes!')
 	       my_string.partition("notes")             # ('Hi, these are my Python ', 'notes', '!')
             ```
+	    
       -  **What is string concatenation?**
          - String concatenation appends two strings together
          - It binds a number of string variables together, creating one string from two or more individual strings
@@ -196,6 +212,7 @@
 	       string_two = "bye!"
 	       my_string =  string_one + " " + string_two     # Okay, bye!
             ```
+	    
       -  **What is string interpolation?**
          - Inject a variable into your string for printing
          - Substitute values of variables into placeholders in a string
@@ -248,6 +265,7 @@
 	       print("These are my brothers %s and %s" %(name_one,name_two))                       # These are my brothers Dave and Alex
 	       print(f"{name_one!r} is a python developer")                                        # 'Dave' is a python developer
             ```
+	    
       -  **How can we check if a certain character is present or not in a string?**
          - Using the **'if "character" in my_string'** or **'if "character" not in my_string'** searches for the presence of the required character in a string
          - If the character is present, **'"character" in my_string'** returns a True boolean value
@@ -274,39 +292,98 @@
 <hr>
 
 **2. Numeric Data Types**
+Numeric data is classified into three sub-categories - `int`, `float` and `complex`
+
    - ### int
      - **What is an int?**
-         - An integer, or int, is a whole number, positive or negative, without decimals, of unlimited length
-         - There is no limit on the length of a string
-
-[:arrow_up:](https://github.com/DasikaMadhu/WQU-ADSL-Notes/blob/main/Python%20Basics.md#python-basics)
-<hr>
+         - An integer, or int, is a whole number, positive or negative, without decimals
+         - There is no limit on the length of an int
+         - Numbers can be positive or negative
+         	```
+		   num_one = 100
+		   num_two = -65434567
+		    ```
 
    - ### float
      - **What is a float?**
-         - Strings are an ordered sequence of characters that are enclosed within 'single' or "double" quotes 
-         - There is no limit on the length of a string
-
-[:arrow_up:](https://github.com/DasikaMadhu/WQU-ADSL-Notes/blob/main/Python%20Basics.md#python-basics)
-<hr>
+         - A float is a real number that contains a decimal point dividing the integer and fractional parts
+         - Strings support being encased by single and double quotes, so you can use nested quotes to print strings with quotes
+         - Numbers can be positive or negative
+         - They can also hold scientific numbers with an "e" to indicate the power of 10
+         	```
+		   num_one = 100.0
+		   num_two = -3487.355e1000
+		    ```
 
    - ### complex
      - **What is a complex?**
-         - Strings are an ordered sequence of characters that are enclosed within 'single' or "double" quotes 
-         - There is no limit on the length of a string
+         - Complex numbers are written in the form a + bJ
+         - a and b are floats and J (or j) represents the square root of -1
+         - The real number is a, and the imaginary part is b
+         - Numbers can be positive or negative
+         	```
+		   num_one = 100.0j
+		   num_two = -100j
+		    ```
+		    
+     - **How do you find out what type of data you are working with?**
+         - Using the **type()** function identifies the data type of its argument
+         	```
+		   num_one = 100
+		   num_two = -100.000
+		   num_three = 10j
+		   
+		   type(num_one)                          # <class 'int'>
+		   type(num_two)                          # <class 'float'>
+		   type(num_three)                        # <class 'complex'>
+		   
+		   type(354)                              # <class 'int'> 
+		   type(1873.2837)                        # <class 'float'>
+		   type(24.534j)                          # <class 'complex'>
+		    ```
+
+     - **How do you find out what type of data you are working with?**
+         - Using the **type()** function identifies the data type of its argument
+         	```
+		   num_one = 100
+		   num_two = -100.000
+		   num_three = 10j
+		   
+		   type(num_one)                          # <class 'int'>
+		   type(num_two)                          # <class 'float'>
+		   type(num_three)                        # <class 'complex'>
+		    ```
+
+     - **How do you find out what type of data you are working with?**
+         - Using the **type()** function identifies the data type of its argument
+         	```
+		
+		   num_one = 100
+		   num_two = -100.000
+		   num_three = 10j
+		   
+		   type(num_one)                          # <class 'int'>
+		   type(num_two)                          # <class 'float'>
+		   type(num_three)                        # <class 'complex'>
+		   
+		   
+		    ```
+
 
 [:arrow_up:](https://github.com/DasikaMadhu/WQU-ADSL-Notes/blob/main/Python%20Basics.md#python-basics)
 <hr>
 
 **3. Sequence Data Types**
+
    - ### list
      - **What is a list?**
+         - 
 
 
 [:arrow_up:](https://github.com/DasikaMadhu/WQU-ADSL-Notes/blob/main/Python%20Basics.md#python-basics)
 <hr>
 
-   - ### complex
+   - ### tuple
      - **What is a tuple?**
          - 
 
@@ -314,6 +391,7 @@
 <hr>
 
 **4. Mapping Data Type**
+
    - ### dict
      - **What is a dict?**
          - 
@@ -322,6 +400,7 @@
 <hr>
 
 **5. Boolean Data Type**
+
    - ### bool
      - **What is a bool?**
          - 
@@ -329,6 +408,13 @@
 
 [:arrow_up:](https://github.com/DasikaMadhu/WQU-ADSL-Notes/blob/main/Python%20Basics.md#python-basics)
 <hr>
+
+## Numerical Operations
+
+   
+[:arrow_up:](https://github.com/DasikaMadhu/WQU-ADSL-Notes/blob/main/Python%20Basics.md#python-basics)
+<hr>
+ 	
 
 ## Conditional Statements
 
