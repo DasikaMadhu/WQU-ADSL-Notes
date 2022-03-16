@@ -27,6 +27,8 @@ A curated list of notes compiled while working on the World Quant University - A
     - [Variables](https://github.com/DasikaMadhu/WQU-ADSL-Notes/blob/main/Basic%20Concepts%20and%20Vocabulary.md#variables)
     - [Saving State](https://github.com/DasikaMadhu/WQU-ADSL-Notes/blob/main/Basic%20Concepts%20and%20Vocabulary.md#saving-state)
 2. [Python Basics](https://github.com/DasikaMadhu/WQU-ADSL-Notes/blob/main/Python%20Basics.md)
+    - [Data Types in Python](https://github.com/DasikaMadhu/WQU-ADSL-Notes/blob/main/Python%20Basics.md#data-types-in-python)
+        - [str](https://github.com/DasikaMadhu/WQU-ADSL-Notes/blob/main/Python%20Basics.md#str)
 3. [Python Object-oriented Programming](https://github.com/DasikaMadhu/WQU-ADSL-Notes/blob/main/Object-oriented%20Programming.md)
     - [Functions](https://github.com/DasikaMadhu/WQU-ADSL-Notes/blob/main/Object-oriented%20Programming.md#functions)
 4. [Tabular and Tidy Data](https://github.com/DasikaMadhu/WQU-ADSL-Notes/blob/main/Tabular%20and%20Tidy%20Data.md)
