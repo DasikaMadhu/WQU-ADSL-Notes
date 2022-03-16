@@ -48,6 +48,19 @@
            ```
      - **How do you include tabs and newlines in a string?**
          - Insert tabs and newlines into strings using the special sequences \t and \n
+         - These are called escape characters
+         - Common escape characters include 
+   			| Escape Character  | Use                        |
+ 			|-------------|----------------------------------|
+			| \'          | single quote                     |
+			| \\          | backslash                        |
+			| \n          | new line                         |
+			| \r          | carriage return                  |
+			| \t          | tab                              |
+			| \b          | backspace                        |
+			| \f          | form feed                        |
+			| \ooo        | octal values                     |
+			| \xhh        | hexadecimal values               |			
            ```
            message = “Grocery list:\n\tmilk\n\teggs”
            print(message)
@@ -125,7 +138,7 @@
             ```    
       -  **How to split strings?**
          - Using the **split()** method splits the string into substrings
-         - Assign the split parts to other strings
+         - You can assign the split parts to other strings
             ```
             my_string = "Hello, World!"
 	       my_string.split(","))                                    # ['Hello', ' World!']
@@ -134,7 +147,11 @@
 	       first_string, second_string = my_string.split(", ")
 	       first_string                                             # Hi
 	       second_string                                            # these are my Python notes!
-            ```    	   
+            ```  
+         - Using the **splitlines()** method splits a string into a list
+            ```
+	    
+	    ```
       -  **How to count the occurrence of specific characters in a strings?**
          - Using the **count()** method returns the first occurrence of the specified value
             ```
@@ -230,6 +247,8 @@
 	       print("These are my brothers %s and %s" %(name_one,name_two))                       # These are my brothers Dave and Alex
 	       print(f"{name_one!r} is a python developer")                                        # 'Dave' is a python developer
             ```
+      -  **What is string interpolation?**
+         - I
 	    
 **2. Numeric Data Types**
    - int
