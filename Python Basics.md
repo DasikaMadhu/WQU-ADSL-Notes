@@ -5,7 +5,7 @@
 | ------------- | ------------- |
 | Text          | [str](https://github.com/DasikaMadhu/WQU-ADSL-Notes/blob/main/Python%20Basics.md#str)           |
 | Numeric       | int, float    |
-| Sequence      | list, tuple   |
+| Sequence      | list, tuple, complex   |
 | Mapping       | dict          |
 | Set           | set           |
 | Boolean       | bool          |
@@ -28,17 +28,17 @@
 	    
 	       # multi-line string
 	       print("""This is line one.
-	                 This in line two!
+	                 This is in line two!
                      Is this line three?
 		     """)                         # prints This is line one.
-	                                              This in line two!
+	                                              This is in line two!
                                                   Is this line three?
 					      
 		   print('''This is line one.
-		             This in line two!
+		             This is in line two!
 			         Is this line three?
 			     ''')                    # prints This is line one.
-	                                              This in line two!
+	                                              This is in line two!
                                                   Is this line three?
             ```
          - Strings support being encased by single and double quotes, so you can use nested quotes to print strings with quotes
@@ -153,7 +153,7 @@
 	            my_string = "Thank you for perusing my notes. Feel free to check out the rest."
                 print(my_string.splitlines())                          # ['Thank you for perusing my notes. Feel free to check out the rest.']
 	       ```
-      -  **How to count the occurrence of specific characters in a strings?**
+      -  **How to count the occurrence of specific characters in a string?**
          - Using the **count()** method returns the first occurrence of the specified value
             ```
 	       # string count syntax - string.count(value, start, end)
@@ -202,7 +202,7 @@
          - String interpolation can be done in three ways
          	+ using placeholders % 
          	        - A placeholder can interpolate different types of data into a string literal
-         	        - Placeholders can be aby one of the following -
+         	        - Placeholders can be any one of the following -
 				| Placeholder | Data Type                        |
 				|-------------|----------------------------------|
 				| %d or %i    | integer                          |
@@ -270,21 +270,69 @@
            print("expensive" not in my_string)                          # True 
      	   ``` 
 
+[:arrow_up:](https://github.com/DasikaMadhu/WQU-ADSL-Notes/blob/main/Python%20Basics.md#python-basics)
+<hr>
+
 **2. Numeric Data Types**
-   - int
-   - float
+   - ### int
+     - **What is an int?**
+         - An integer, or int, is a whole number, positive or negative, without decimals, of unlimited length
+         - There is no limit on the length of a string
+
+[:arrow_up:](https://github.com/DasikaMadhu/WQU-ADSL-Notes/blob/main/Python%20Basics.md#python-basics)
+<hr>
+
+   - ### float
+     - **What is a float?**
+         - Strings are an ordered sequence of characters that are enclosed within 'single' or "double" quotes 
+         - There is no limit on the length of a string
+
+[:arrow_up:](https://github.com/DasikaMadhu/WQU-ADSL-Notes/blob/main/Python%20Basics.md#python-basics)
+<hr>
+
+   - ### complex
+     - **What is a complex?**
+         - Strings are an ordered sequence of characters that are enclosed within 'single' or "double" quotes 
+         - There is no limit on the length of a string
+
+[:arrow_up:](https://github.com/DasikaMadhu/WQU-ADSL-Notes/blob/main/Python%20Basics.md#python-basics)
+<hr>
 
 **3. Sequence Data Types**
-   - list
-   - tuple
+   - ### list
+     - **What is a list?**
+
+
+[:arrow_up:](https://github.com/DasikaMadhu/WQU-ADSL-Notes/blob/main/Python%20Basics.md#python-basics)
+<hr>
+
+   - ### complex
+     - **What is a tuple?**
+         - 
+
+[:arrow_up:](https://github.com/DasikaMadhu/WQU-ADSL-Notes/blob/main/Python%20Basics.md#python-basics)
+<hr>
 
 **4. Mapping Data Type**
-   - dict
+   - ### dict
+     - **What is a dict?**
+         - 
+
+[:arrow_up:](https://github.com/DasikaMadhu/WQU-ADSL-Notes/blob/main/Python%20Basics.md#python-basics)
+<hr>
 
 **5. Boolean Data Type**
-   - bool
+   - ### bool
+     - **What is a bool?**
+         - 
+
+
+[:arrow_up:](https://github.com/DasikaMadhu/WQU-ADSL-Notes/blob/main/Python%20Basics.md#python-basics)
+<hr>
 
 ## Conditional Statements
+
    
-   
+[:arrow_up:](https://github.com/DasikaMadhu/WQU-ADSL-Notes/blob/main/Python%20Basics.md#python-basics)
+<hr>
  			
