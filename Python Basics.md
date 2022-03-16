@@ -150,8 +150,9 @@
             ```  
          - Using the **splitlines()** method splits a string into a list
             ```
-	    
-	    ```
+	            my_string = "Thank you for perusing my notes. Feel free to check out the rest."
+                print(my_string.splitlines())                          # ['Thank you for perusing my notes. Feel free to check out the rest.']
+	       ```
       -  **How to count the occurrence of specific characters in a strings?**
          - Using the **count()** method returns the first occurrence of the specified value
             ```
@@ -247,9 +248,28 @@
 	       print("These are my brothers %s and %s" %(name_one,name_two))                       # These are my brothers Dave and Alex
 	       print(f"{name_one!r} is a python developer")                                        # 'Dave' is a python developer
             ```
-      -  **What is string interpolation?**
-         - I
-	    
+      -  **How can we check if a certain character is present or not in a string?**
+         - Using the **'if "character" in my_string'** or **'if "character" not in my_string'** searches for the presence of the required character in a string
+         - If the character is present, **'"character" in my_string'** returns a True boolean value
+         - If the character is present, **'"character" not in my_string'** returns a False boolean value
+           ```
+	       my_string = "Learning is free!"
+	       
+	       if "free" in my_string: 
+           print(my_string)                                             # Learning is free!
+			       
+	       if "free" not in my_string: 
+           print("Required character is not present")                   # Required character is not present
+	   
+           print("free" in my_string)                                   # True           
+
+           print("expensive" in my_string)                              # False
+ 
+           print("free" not in my_string)                               # False
+
+           print("expensive" not in my_string)                          # True 
+     	   ``` 
+
 **2. Numeric Data Types**
    - int
    - float
