@@ -3,7 +3,7 @@
 ## [Data Types in Python](https://github.com/DasikaMadhu/WQU-ADSL-Notes/blob/main/Basic%20Concepts%20and%20Vocabulary.md#data-structures-and-types)
 | Type          | Second Header |
 | ------------- | ------------- |
-| Text          | str           |
+| Text          | [str](https://github.com/DasikaMadhu/WQU-ADSL-Notes/blob/main/Python%20Basics.md#str)           |
 | Numeric       | int, float    |
 | Sequence      | list, tuple   |
 | Mapping       | dict          |
