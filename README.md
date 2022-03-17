@@ -31,7 +31,16 @@ A curated list of notes compiled while working on the World Quant University - A
         - [str](https://github.com/DasikaMadhu/WQU-ADSL-Notes/blob/main/Python%20Basics.md#str)
 3. [Python Object-oriented Programming](https://github.com/DasikaMadhu/WQU-ADSL-Notes/blob/main/Object-oriented%20Programming.md)
     - [Functions](https://github.com/DasikaMadhu/WQU-ADSL-Notes/blob/main/Object-oriented%20Programming.md#functions)
-4. [Tabular and Tidy Data](https://github.com/DasikaMadhu/WQU-ADSL-Notes/blob/main/Tabular%20and%20Tidy%20Data.md)
+4. Project 1 - Housing in Mexico
+    1. [Tabular and Tidy Data](https://github.com/DasikaMadhu/WQU-ADSL-Notes/blob/main/Tabular%20and%20Tidy%20Data.md)
+5. Project 2 - Housing in Buenos Aires
+6. Project 3 - Air Quality in Nairobi
+    1. Wrangling Data with MongoDB
+    2. Linear Regression with Time Series Data
+    3. Autoregressive Models
+    4. ARMA Models and Hyperparameter Tuning 
+
+
 
 ## Collaborators
 1. [Dasika Madhu](https://github.com/DasikaMadhu)
