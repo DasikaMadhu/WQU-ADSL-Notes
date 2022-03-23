@@ -39,6 +39,8 @@ A curated list of notes compiled while working on the World Quant University - A
     2. Linear Regression with Time Series Data
     3. Autoregressive Models
     4. ARMA Models and Hyperparameter Tuning 
+7. Project 4 - Earthquake Damage in Nepal
+    1. Wrangling Data with SQL
 
 
 
